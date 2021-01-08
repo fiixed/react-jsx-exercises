@@ -7,6 +7,7 @@ function App() {
     {
         comments.map((comment) => (
             <Comment
+                key={comment.key}
                 pic={comment.pic}
                 body={comment.body}
                 />
