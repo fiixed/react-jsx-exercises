@@ -1,15 +1,31 @@
 let Header = () => {
-    return <span>Design a header for your blog</span>
+    return <header>
+        <h1>Title</h1>
+    </header>
 }
 let Article = () => {
-    return <span>Write and design your blog article</span>
+    return <p>
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+    </p>
 }
 let Footer = () => {
-    return <span>Design a footer for your blog</span>
+    const currentYear = new Date().getFullYear();
+    return (
+        <footer>
+            <p>
+                Copyright © {currentYear}
+            </p>
+        </footer>
+    );
 }
 
 let Blog = () => {
-    return <span>Make this Component render the header, article, and footer</span>
+    return <div>
+        <Header />
+        <Article />
+        <Footer />
+
+    </div>
 }
 
 
